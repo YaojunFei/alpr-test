@@ -77,7 +77,7 @@ def getRects(edged):
     return ret
 
 def markArea(img, contour, color):
-    cv2.drawContours(img, [contour], -1, color, -1)
+    cv2.drawContours(img, [contour], -1, color, 3)
 
 def mask(file):
     img = cv2.imread(file)
